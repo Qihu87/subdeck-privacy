@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Subdeck Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f5;
+      --text: #1c1c1a;
+      --muted: #6b6b66;
+      --line: #e4e4df;
+      --max: 40rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111110;
+        --text: #ecece8;
+        --muted: #9a9a94;
+        --line: #2a2a27;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 17px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      line-height: 1.7;
+    }
+
+    .lang-input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    nav {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav label {
+      cursor: pointer;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    nav label:hover {
+      color: var(--text);
+    }
+
+    nav label:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    nav .sep {
+      margin: 0 0.4em;
+      color: var(--line);
+    }
+
+    #lang-zh:checked ~ .page [for="lang-zh"],
+    #lang-en:checked ~ .page [for="lang-en"] {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    #lang-zh:checked ~ .page .policy-en,
+    #lang-en:checked ~ .page .policy-zh {
+      display: none;
+    }
+
+    main {
+      padding-top: 2rem;
+    }
+
+    article :first-child {
+      margin-top: 0;
+    }
+
+    h1, h2, h3, h4 {
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      margin: 0 0 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin: 2rem 0 0.7rem;
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p, ul, ol {
+      margin: 0 0 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    a {
+      color: var(--text);
+    }
+
+    .updated {
+      color: var(--muted);
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 2rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 640px) {
+      html {
+        font-size: 18px;
+      }
+
+      .page {
+        padding: 2.5rem 1.5rem 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <input class="lang-input" type="radio" name="lang" id="lang-zh" checked>
+  <input class="lang-input" type="radio" name="lang" id="lang-en">
+
+  <div class="page">
+    <header>
+      <p class="brand">Subdeck</p>
+      <nav aria-label="Language">
+        <label for="lang-zh">中文</label><span class="sep">|</span><label for="lang-en">English</label>
+      </nav>
+    </header>
+
+    <main>
+      <article class="policy-zh" lang="zh-CN">
+        <h1>Subdeck 隐私政策</h1>
+        <p class="updated">最后更新日期：〔正式发布时填写〕</p>
+        <p>Subdeck 重视您的隐私，并致力于以清晰、克制的方式处理与您使用本应用相关的数据。</p>
+        <p>本隐私政策用于说明您在使用 Subdeck 时，相关数据如何被存储、使用和处理，以及部分功能涉及的 Apple 服务和第三方服务。</p>
+        <hr>
+        <h2>1. 适用范围</h2>
+        <p>本隐私政策适用于 Subdeck iOS 应用及其相关功能。</p>
+        <p>Subdeck 是一款订阅管理工具。您可以在应用中记录和管理订阅、付款日期、金额、币种、分类、提醒等信息。</p>
+        <p>Subdeck 不提供独立的账号注册或登录系统，也不运营用于保存用户订阅数据的自建服务器。</p>
+        <hr>
+        <h2>2. 您在 Subdeck 中创建的数据</h2>
+        <p>根据您实际使用的功能，您可以主动创建或设置以下信息，包括但不限于：</p>
+        <ul>
+          <li>订阅名称</li>
+          <li>订阅金额及币种</li>
+          <li>开始日期和付款日期</li>
+          <li>订阅周期</li>
+          <li>免费试用信息</li>
+          <li>取消状态</li>
+          <li>订阅分类</li>
+          <li>提醒设置</li>
+          <li>备注</li>
+          <li>订阅历史</li>
+          <li>图标、颜色等展示信息</li>
+        </ul>
+        <p>这些信息用于提供订阅管理、付款提醒、支出统计及其他与订阅管理相关的功能。</p>
+        <p>Subdeck 不会将这些核心订阅数据自动发送至开发者控制的服务器。</p>
+        <hr>
+        <h2>3. 本地数据存储</h2>
+        <p>在默认情况下，您的订阅、订阅历史、分类等核心数据保存在您的设备本地。</p>
+        <p>部分应用设置和状态也会保存在设备本地，例如：</p>
+        <ul>
+          <li>默认显示货币</li>
+          <li>外观设置</li>
+          <li>提醒时间</li>
+          <li>通知设置</li>
+          <li>iCloud 同步设置</li>
+          <li>部分 Pro 权益状态</li>
+          <li>汇率缓存</li>
+          <li>备份相关状态</li>
+        </ul>
+        <p>这些设置主要用于保持您的应用偏好和正常提供相关功能。</p>
+        <p>Subdeck 不运营用于集中存储这些数据的自建用户数据库。</p>
+        <hr>
+        <h2>4. iCloud 同步</h2>
+        <p>如果您已开通 Subdeck Pro 并主动开启 iCloud 同步，Subdeck 会使用 Apple 提供的 iCloud / CloudKit 服务，在您使用同一 Apple 账户的设备之间同步相关数据。</p>
+        <p>可能同步的数据包括：</p>
+        <ul>
+          <li>订阅信息</li>
+          <li>订阅历史</li>
+          <li>订阅分类</li>
+          <li>与上述数据相关的记录及关系信息</li>
+        </ul>
+        <p>这些数据通过 Apple 提供的 CloudKit Private Database 进行同步。</p>
+        <p>Subdeck 不提供独立的 iCloud 登录功能，也不会通过应用代码读取您的 Apple ID、广告标识符或 CloudKit 用户身份标识。</p>
+        <p>部分应用设置保存在设备本地，并不会随上述订阅数据同步至 iCloud。</p>
+        <p>如果您关闭 Subdeck 的 iCloud 同步功能，Subdeck 不会主动删除此前已经同步至 iCloud 的数据。</p>
+        <p>iCloud 和 CloudKit 由 Apple 提供，其数据存储、安全及其他处理同时受到 Apple 相应服务条款和隐私政策的约束。</p>
+        <hr>
+        <h2>5. 本地备份与恢复</h2>
+        <p>Subdeck 提供手动备份和恢复功能。</p>
+        <p>当您主动创建备份时，应用会在设备上生成 JSON 格式的备份文件，其中可能包含：</p>
+        <ul>
+          <li>订阅及订阅历史</li>
+          <li>订阅分类</li>
+          <li>部分应用设置</li>
+          <li>备份创建时间</li>
+          <li>应用版本等必要备份信息</li>
+        </ul>
+        <p>备份文件首先在设备本地生成，随后由您通过 iOS 系统分享功能自行决定保存或发送的位置，例如“文件”App、AirDrop、电子邮件或其他您主动选择的应用和服务。</p>
+        <p>Subdeck 不会自动将手动备份文件上传至开发者服务器。</p>
+        <p>如果您主动将备份文件发送或保存至第三方应用、云存储或其他服务，后续的数据保存和处理将受到您所选择服务自身隐私政策和服务条款的约束。</p>
+        <p>备份文件可能包含您的订阅信息，请妥善保管，并谨慎选择分享和存储位置。</p>
+        <hr>
+        <h2>6. 汇率服务</h2>
+        <p>为了提供不同货币之间的参考汇率换算功能，Subdeck 会访问第三方汇率服务 Frankfurter。</p>
+        <p>进行汇率请求时，Subdeck 会发送完成换算所需要的币种代码，例如基础币种和目标币种。</p>
+        <p>Subdeck 不会为了获取汇率而主动向该服务发送您的：</p>
+        <ul>
+          <li>订阅名称</li>
+          <li>订阅金额</li>
+          <li>备注</li>
+          <li>订阅历史</li>
+          <li>联系信息</li>
+          <li>Apple ID</li>
+          <li>广告标识符</li>
+        </ul>
+        <p>与一般互联网服务相同，在建立网络连接时，服务提供方可能自动接收到完成网络通信所需要的技术信息，例如 IP 地址。此类信息由相应服务提供方按照其自身的隐私规则处理。</p>
+        <p>Subdeck 会在您的设备本地缓存部分汇率数据，以减少不必要的网络请求并改善使用体验。</p>
+        <hr>
+        <h2>7. 通知与订阅提醒</h2>
+        <p>如果您允许 Subdeck 发送通知，通知权限仅用于与订阅管理相关的本地提醒，目前主要包括：</p>
+        <ul>
+          <li>首次付款提醒</li>
+          <li>扣款提醒</li>
+        </ul>
+        <p>提醒内容可能包含订阅名称、金额以及距离扣费的提前天数。</p>
+        <p>相关提醒由 Subdeck 在您的设备本地创建和安排。</p>
+        <p>Subdeck 不运营用于发送此类订阅提醒的远程推送服务器，也不会为了发送这些提醒而将您的订阅内容上传至开发者服务器。</p>
+        <p>买断类记录不会安排上述提醒。</p>
+        <p>您可以随时通过 Subdeck 设置或 iOS 系统设置管理通知权限。</p>
+        <hr>
+        <h2>8. 应用内购买</h2>
+        <p>Subdeck 通过 Apple App Store 提供应用内购买，目前包括：</p>
+        <ul>
+          <li>Pro 年度自动续期订阅</li>
+          <li>Pro 终身购买</li>
+        </ul>
+        <p>购买和交易均通过 Apple 提供的 StoreKit 和 App Store 系统处理。</p>
+        <p>Subdeck 不直接收集或保存您的：</p>
+        <ul>
+          <li>银行卡信息</li>
+          <li>信用卡信息</li>
+          <li>Apple Pay 支付信息</li>
+          <li>App Store 账户密码</li>
+        </ul>
+        <p>Subdeck 会通过 StoreKit 获取提供 Pro 功能所必要的购买和权益状态，以判断您是否拥有相应功能的使用权限。</p>
+        <p>Subdeck 不会将您的购买收据或交易记录发送至开发者自己的服务器或其他第三方支付服务。</p>
+        <p>与交易相关的数据同时受到 Apple 相应服务条款和隐私政策的约束。</p>
+        <hr>
+        <h2>9. 分析、广告与追踪</h2>
+        <p>当前版本的 Subdeck：</p>
+        <ul>
+          <li>不集成第三方广告 SDK</li>
+          <li>不集成第三方用户行为分析 SDK</li>
+          <li>不集成第三方崩溃分析 SDK</li>
+          <li>不使用 IDFA 进行广告追踪</li>
+          <li>不请求 App Tracking Transparency 跨应用追踪权限</li>
+          <li>不使用您的订阅记录建立广告画像</li>
+          <li>不向广告平台出售您的订阅数据</li>
+        </ul>
+        <p>Subdeck 不会将您的订阅管理数据用于定向广告。</p>
+        <hr>
+        <h2>10. 系统权限</h2>
+        <p>Subdeck 遵循功能所需的最小权限原则。</p>
+        <p>当前版本主要请求：</p>
+        <h3>通知权限</h3>
+        <p>用于发送首次付款和扣款等订阅提醒。</p>
+        <p>当前版本不会主动请求访问您的：</p>
+        <ul>
+          <li>照片</li>
+          <li>相机</li>
+          <li>位置信息</li>
+          <li>通讯录</li>
+          <li>系统日历</li>
+          <li>麦克风</li>
+          <li>广告追踪权限</li>
+        </ul>
+        <p>Subdeck 使用系统提供的文件选择和分享功能完成备份文件的导入、导出和分享。</p>
+        <p>如果未来新增需要其他系统权限的功能，我们会在使用相关功能时按照系统要求说明用途并请求相应授权。</p>
+        <hr>
+        <h2>11. 数据共享与第三方服务</h2>
+        <p>Subdeck 不出售您的个人数据或订阅记录。</p>
+        <p>除提供相关功能所必要的情况外，Subdeck 不会主动向其他公司提供您的订阅记录、备注或订阅历史。</p>
+        <p>当前版本可能涉及以下外部服务：</p>
+        <h3>Apple iCloud / CloudKit</h3>
+        <p>当您已开通 Subdeck Pro 并主动开启 iCloud 同步时，用于在您的 Apple 设备之间同步订阅数据。</p>
+        <h3>Apple App Store / StoreKit</h3>
+        <p>用于应用内购买、交易处理和 Pro 权益验证。</p>
+        <h3>Frankfurter</h3>
+        <p>用于获取参考汇率。Subdeck 仅主动发送汇率换算所需要的币种代码。</p>
+        <h3>您主动选择的分享或存储服务</h3>
+        <p>仅当您主动导出并分享备份文件时涉及，具体接收方由您自行选择。</p>
+        <p>第三方服务对其所处理的信息适用其自身的隐私政策和服务条款。</p>
+        <hr>
+        <h2>12. 数据保留与删除</h2>
+        <h3>删除订阅</h3>
+        <p>您可以直接在 Subdeck 中删除订阅记录。</p>
+        <p>删除后，该订阅及其相关订阅历史会从当前使用的数据存储中删除。</p>
+        <p>如果您开启了 iCloud 同步，删除操作将通过 SwiftData 与 CloudKit 的同步机制进行处理。云端同步时间和最终处理同时取决于 Apple 提供的 iCloud / CloudKit 服务。</p>
+        <h3>关闭 iCloud 同步</h3>
+        <p>如果您曾开启 iCloud 同步，之后关闭该功能，Subdeck 不会主动删除此前已经同步至 iCloud 的数据。</p>
+        <h3>卸载 Subdeck</h3>
+        <p>卸载 Subdeck 后，保存在应用沙盒中的本地数据将按照 iOS 的应用数据管理机制进行处理。</p>
+        <p>此前已经同步或保存至 iCloud 的数据可能继续存在，并受到您的 Apple 账户和 iCloud 数据管理机制控制。</p>
+        <h3>手动备份</h3>
+        <p>您主动导出的备份文件由您自行管理。</p>
+        <p>如果您已经将备份文件保存到“文件”App、其他设备、电子邮件、云存储或其他第三方服务，删除 Subdeck 不会自动删除这些独立保存的备份副本。</p>
+        <p>由于 Subdeck 没有独立的用户账号和开发者服务器，开发者无法通过电子邮件远程访问或直接删除仅保存在您设备、个人 iCloud 或您自行保存位置中的订阅数据。</p>
+        <hr>
+        <h2>13. 您的选择与权利</h2>
+        <p>您可以通过 Subdeck 和 iOS 系统提供的功能对相关数据和权限进行管理，包括：</p>
+        <ul>
+          <li>查看、修改或删除订阅记录</li>
+          <li>开启或关闭 iCloud 同步</li>
+          <li>创建和管理本地备份</li>
+          <li>管理通知权限</li>
+          <li>删除应用及其本地数据</li>
+          <li>通过 Apple 提供的功能管理相关 iCloud 数据</li>
+        </ul>
+        <p>根据您所在国家或地区适用的数据保护法律，您可能还享有访问、更正、删除、限制处理或提出异议等权利。</p>
+        <p>如果相关数据由 Subdeck 开发者实际持有或控制，您可以通过本政策末尾提供的联系方式提出请求。</p>
+        <p>对于仅保存在您的设备、个人 iCloud 账户或您自行选择的第三方服务中的数据，由于开发者无法直接访问这些数据，因此无法代替您进行远程访问、修改或删除。</p>
+        <hr>
+        <h2>14. 数据安全</h2>
+        <p>Subdeck 尽量减少不必要的数据收集和数据传输。</p>
+        <p>您的核心订阅数据主要保存在您的设备，以及在您主动开启同步时使用的 Apple iCloud 环境中。</p>
+        <p>Subdeck 不运营用于集中存储用户订阅数据的开发者服务器。</p>
+        <p>但是，任何电子存储、设备或网络传输方式都无法保证绝对安全。因此，请妥善保护您的设备、Apple 账户以及手动导出的备份文件。</p>
+        <hr>
+        <h2>15. 儿童隐私</h2>
+        <p>Subdeck 并非专门面向儿童设计的产品。</p>
+        <p>Subdeck 不提供用户账号系统，也不会有意通过本应用要求儿童提供身份、联系方式或用于广告追踪的信息。</p>
+        <p>如果未来产品功能或适用范围发生重大变化，我们会根据适用法律及平台要求相应更新隐私保护措施和本隐私政策。</p>
+        <hr>
+        <h2>16. 外部链接与服务</h2>
+        <p>Subdeck 中可能包含指向 Apple 服务条款、隐私政策、电子邮件或其他外部网站和服务的链接。</p>
+        <p>当您主动离开 Subdeck 并访问第三方网站、应用或服务时，该第三方对信息的处理不受本隐私政策控制。</p>
+        <p>建议您在使用相关第三方服务前了解其隐私政策和服务条款。</p>
+        <hr>
+        <h2>17. 隐私政策的变更</h2>
+        <p>随着 Subdeck 功能、数据处理方式、所使用的服务或相关法律要求发生变化，本隐私政策可能会相应更新。</p>
+        <p>更新后，我们会修改本页面顶部的“最后更新日期”。</p>
+        <p>如果变更对您的隐私权利或数据处理方式产生重大影响，我们会在适当情况下通过合理方式向您说明。</p>
+        <p>建议您定期查看本隐私政策，以了解最新内容。</p>
+        <hr>
+        <h2>18. 联系我们</h2>
+        <p>如果您对本隐私政策、Subdeck 的数据处理方式或隐私保护有任何疑问，可以通过以下方式联系我们：</p>
+        <p>开发者：QiHu Wang</p>
+        <p>联系邮箱：<a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+        <p>我们会在合理范围内处理与 Subdeck 隐私相关的咨询和请求。</p>
+      </article>
+
+      <article class="policy-en" lang="en">
+        <h1>Subdeck Privacy Policy</h1>
+        <p class="updated">Last Updated: [To be filled in upon publication]</p>
+        <p>Subdeck values your privacy and is committed to handling data related to your use of the app in a clear and responsible manner.</p>
+        <p>This Privacy Policy explains how data is stored, used, and processed when you use Subdeck, as well as certain Apple services and third-party services involved in providing specific features.</p>
+        <hr>
+        <h2>1. Scope</h2>
+        <p>This Privacy Policy applies to the Subdeck iOS app and its related features.</p>
+        <p>Subdeck is a subscription management app that allows you to record and manage information such as subscriptions, payment dates, amounts, currencies, categories, and reminders.</p>
+        <p>Subdeck does not provide an independent account registration or login system and does not operate its own servers for storing users' subscription data.</p>
+        <hr>
+        <h2>2. Data You Create in Subdeck</h2>
+        <p>Depending on the features you use, you may voluntarily create or configure information including, but not limited to:</p>
+        <ul>
+          <li>Subscription names</li>
+          <li>Subscription amounts and currencies</li>
+          <li>Start dates and payment dates</li>
+          <li>Billing cycles</li>
+          <li>Free trial information</li>
+          <li>Cancellation status</li>
+          <li>Subscription categories</li>
+          <li>Reminder settings</li>
+          <li>Notes</li>
+          <li>Subscription history</li>
+          <li>Icons, colors, and other display information</li>
+        </ul>
+        <p>This information is used to provide subscription management, payment reminders, spending statistics, and other subscription-related features.</p>
+        <p>Subdeck does not automatically send this core subscription data to servers controlled by the developer.</p>
+        <hr>
+        <h2>3. Local Data Storage</h2>
+        <p>By default, your subscriptions, subscription history, categories, and other core data are stored locally on your device.</p>
+        <p>Certain app settings and states are also stored locally, including, for example:</p>
+        <ul>
+          <li>Preferred display currency</li>
+          <li>Appearance settings</li>
+          <li>Reminder time</li>
+          <li>Notification settings</li>
+          <li>iCloud sync settings</li>
+          <li>Certain Pro entitlement states</li>
+          <li>Exchange rate cache</li>
+          <li>Backup-related status</li>
+        </ul>
+        <p>These settings are primarily used to preserve your preferences and provide the relevant app features.</p>
+        <p>Subdeck does not operate a centralized developer-controlled user database for storing this data.</p>
+        <hr>
+        <h2>4. iCloud Sync</h2>
+        <p>If you have Subdeck Pro and choose to enable iCloud Sync, Subdeck uses Apple's iCloud / CloudKit services to synchronize relevant data across devices signed in to the same Apple Account.</p>
+        <p>Data that may be synchronized includes:</p>
+        <ul>
+          <li>Subscription information</li>
+          <li>Subscription history</li>
+          <li>Subscription categories</li>
+          <li>Records and relationships necessary to support the data above</li>
+        </ul>
+        <p>This data is synchronized through Apple's CloudKit Private Database.</p>
+        <p>Subdeck does not provide a separate iCloud login system and does not access your Apple Account identifier, advertising identifier, or CloudKit user identity identifier through the app's code.</p>
+        <p>Certain app settings remain stored locally on your device and are not synchronized to iCloud with your subscription data.</p>
+        <p>If you disable iCloud Sync in Subdeck, Subdeck does not actively delete data that was previously synchronized to iCloud.</p>
+        <p>iCloud and CloudKit are services provided by Apple. Their storage, security, and other data processing practices are also subject to Apple's applicable terms and privacy policies.</p>
+        <hr>
+        <h2>5. Local Backup and Restore</h2>
+        <p>Subdeck provides manual backup and restore features.</p>
+        <p>When you choose to create a backup, Subdeck generates a backup file in JSON format on your device. The backup may contain:</p>
+        <ul>
+          <li>Subscriptions and subscription history</li>
+          <li>Subscription categories</li>
+          <li>Certain app settings</li>
+          <li>Backup creation time</li>
+          <li>App version and other necessary backup information</li>
+        </ul>
+        <p>The backup file is first generated locally on your device. You may then use the iOS system sharing interface to choose where to save or send it, such as the Files app, AirDrop, email, or another app or service of your choice.</p>
+        <p>Subdeck does not automatically upload manual backup files to developer-controlled servers.</p>
+        <p>If you choose to send or store a backup file using a third-party app, cloud storage provider, or other service, the subsequent storage and processing of that file will be governed by the privacy policy and terms of the service you selected.</p>
+        <p>Backup files may contain your subscription information. Please keep them secure and carefully choose where you share or store them.</p>
+        <hr>
+        <h2>6. Exchange Rate Service</h2>
+        <p>To provide reference currency conversion rates, Subdeck accesses the third-party exchange rate service Frankfurter.</p>
+        <p>When requesting exchange rates, Subdeck sends only the currency codes necessary to perform the conversion, such as the base currency and target currency.</p>
+        <p>Subdeck does not intentionally send the following information to the exchange rate service for this purpose:</p>
+        <ul>
+          <li>Subscription names</li>
+          <li>Subscription amounts</li>
+          <li>Notes</li>
+          <li>Subscription history</li>
+          <li>Contact information</li>
+          <li>Apple Account information</li>
+          <li>Advertising identifiers</li>
+        </ul>
+        <p>As with ordinary internet services, the service provider may automatically receive technical information necessary to establish a network connection, such as your IP address. Such information is handled by the relevant service provider in accordance with its own privacy practices.</p>
+        <p>Subdeck may cache certain exchange rate data locally on your device to reduce unnecessary network requests and improve the user experience.</p>
+        <hr>
+        <h2>7. Notifications and Subscription Reminders</h2>
+        <p>If you allow Subdeck to send notifications, notification permission is used only for locally scheduled subscription-related reminders, currently including:</p>
+        <ul>
+          <li>First payment reminders</li>
+          <li>Payment reminders</li>
+        </ul>
+        <p>Reminder content may include the subscription name, amount, and the number of days before payment.</p>
+        <p>These reminders are created and scheduled locally on your device.</p>
+        <p>Subdeck does not operate a remote push notification server for sending these subscription reminders and does not upload your subscription content to developer-controlled servers for this purpose.</p>
+        <p>Records marked as one-time purchases do not receive the reminders described above.</p>
+        <p>You can manage notification permissions at any time through Subdeck settings or iOS system settings.</p>
+        <hr>
+        <h2>8. In-App Purchases</h2>
+        <p>Subdeck offers in-app purchases through the Apple App Store, currently including:</p>
+        <ul>
+          <li>Pro Annual Auto-Renewable Subscription</li>
+          <li>Pro Lifetime Purchase</li>
+        </ul>
+        <p>Purchases and transactions are processed through Apple's StoreKit and App Store systems.</p>
+        <p>Subdeck does not directly collect or store your:</p>
+        <ul>
+          <li>Debit card information</li>
+          <li>Credit card information</li>
+          <li>Apple Pay payment information</li>
+          <li>App Store account password</li>
+        </ul>
+        <p>Subdeck uses StoreKit to obtain the purchase and entitlement status necessary to determine whether you have access to the relevant Pro features.</p>
+        <p>Subdeck does not send your purchase receipts or transaction records to developer-controlled servers or third-party payment processors.</p>
+        <p>Transaction-related data is also subject to Apple's applicable terms and privacy policies.</p>
+        <hr>
+        <h2>9. Analytics, Advertising, and Tracking</h2>
+        <p>The current version of Subdeck:</p>
+        <ul>
+          <li>Does not integrate third-party advertising SDKs</li>
+          <li>Does not integrate third-party user analytics SDKs</li>
+          <li>Does not integrate third-party crash analytics SDKs</li>
+          <li>Does not use IDFA for advertising tracking</li>
+          <li>Does not request App Tracking Transparency permission for cross-app tracking</li>
+          <li>Does not use your subscription records to build advertising profiles</li>
+          <li>Does not sell your subscription data to advertising platforms</li>
+        </ul>
+        <p>Subdeck does not use your subscription management data for targeted advertising.</p>
+        <hr>
+        <h2>10. System Permissions</h2>
+        <p>Subdeck follows a principle of requesting only the permissions necessary to provide its features.</p>
+        <p>The current version primarily requests:</p>
+        <h3>Notification Permission</h3>
+        <p>Used to provide first payment reminders and payment reminders related to your subscriptions.</p>
+        <p>The current version does not actively request access to your:</p>
+        <ul>
+          <li>Photos</li>
+          <li>Camera</li>
+          <li>Location</li>
+          <li>Contacts</li>
+          <li>System calendar</li>
+          <li>Microphone</li>
+          <li>Advertising tracking permission</li>
+        </ul>
+        <p>Subdeck uses system-provided file selection and sharing features for importing, exporting, and sharing backup files.</p>
+        <p>If future features require additional system permissions, Subdeck will explain the relevant purpose and request authorization as required by the operating system.</p>
+        <hr>
+        <h2>11. Data Sharing and Third-Party Services</h2>
+        <p>Subdeck does not sell your personal data or subscription records.</p>
+        <p>Except where necessary to provide the features described in this Privacy Policy, Subdeck does not intentionally provide your subscription records, notes, or subscription history to other companies.</p>
+        <p>The current version may involve the following external services:</p>
+        <h3>Apple iCloud / CloudKit</h3>
+        <p>Used to synchronize subscription data across your Apple devices when you have Subdeck Pro and choose to enable iCloud Sync.</p>
+        <h3>Apple App Store / StoreKit</h3>
+        <p>Used for in-app purchases, transaction processing, and Pro entitlement verification.</p>
+        <h3>Frankfurter</h3>
+        <p>Used to obtain reference exchange rates. Subdeck only intentionally sends the currency codes necessary for the requested conversion.</p>
+        <h3>Sharing or Storage Services You Choose</h3>
+        <p>These services are involved only when you choose to export and share a backup file. The recipient or destination is selected by you.</p>
+        <p>Third-party services are governed by their own privacy policies and terms with respect to the information they process.</p>
+        <hr>
+        <h2>12. Data Retention and Deletion</h2>
+        <h3>Deleting a Subscription</h3>
+        <p>You can delete subscription records directly within Subdeck.</p>
+        <p>When a subscription is deleted, the subscription and its related history are removed from the data storage currently in use.</p>
+        <p>If iCloud Sync is enabled, deletion is handled through the synchronization mechanisms provided by SwiftData and CloudKit. The timing and completion of cloud synchronization also depend on Apple's iCloud / CloudKit services.</p>
+        <h3>Disabling iCloud Sync</h3>
+        <p>If you previously enabled iCloud Sync and later disable it, Subdeck does not actively delete data that was previously synchronized to iCloud.</p>
+        <h3>Uninstalling Subdeck</h3>
+        <p>When Subdeck is uninstalled, locally stored data within the app's sandbox is handled according to iOS application data management mechanisms.</p>
+        <p>Data previously stored or synchronized in iCloud may continue to exist and remains subject to your Apple Account and iCloud data management controls.</p>
+        <h3>Manual Backup Files</h3>
+        <p>Backup files that you export are managed by you.</p>
+        <p>If you have saved a backup file to the Files app, another device, email, cloud storage, or another third-party service, uninstalling Subdeck will not automatically delete those separately stored copies.</p>
+        <p>Because Subdeck does not provide an independent user account system or operate a developer-controlled server containing your subscription data, the developer cannot remotely access or directly delete subscription data stored only on your device, in your personal iCloud account, or in locations you independently choose.</p>
+        <hr>
+        <h2>13. Your Choices and Rights</h2>
+        <p>You can manage relevant data and permissions using features provided by Subdeck and iOS, including:</p>
+        <ul>
+          <li>Viewing, editing, or deleting subscription records</li>
+          <li>Enabling or disabling iCloud Sync</li>
+          <li>Creating and managing local backups</li>
+          <li>Managing notification permissions</li>
+          <li>Uninstalling the app and removing its local app data</li>
+          <li>Managing relevant iCloud data through tools provided by Apple</li>
+        </ul>
+        <p>Depending on the data protection laws applicable in your country or region, you may also have rights such as access, correction, deletion, restriction of processing, or objection to certain processing.</p>
+        <p>If relevant data is actually held or controlled by the Subdeck developer, you may submit a request using the contact information provided at the end of this Privacy Policy.</p>
+        <p>For data stored only on your device, in your personal iCloud account, or with third-party services you independently choose, the developer cannot directly access such data and therefore cannot remotely access, modify, or delete it on your behalf.</p>
+        <hr>
+        <h2>14. Data Security</h2>
+        <p>Subdeck aims to minimize unnecessary data collection and data transmission.</p>
+        <p>Your core subscription data is primarily stored on your device and, when you choose to enable synchronization, within Apple's iCloud environment.</p>
+        <p>Subdeck does not operate developer-controlled servers for centrally storing users' subscription data.</p>
+        <p>However, no method of electronic storage, device security, or network transmission can guarantee absolute security. Please take appropriate steps to protect your device, Apple Account, and manually exported backup files.</p>
+        <hr>
+        <h2>15. Children's Privacy</h2>
+        <p>Subdeck is not specifically designed for children.</p>
+        <p>Subdeck does not provide a user account system and does not intentionally ask children to provide identity information, contact information, or information used for advertising tracking.</p>
+        <p>If Subdeck's features or intended audience materially change in the future, appropriate privacy protections and this Privacy Policy will be updated in accordance with applicable laws and platform requirements.</p>
+        <hr>
+        <h2>16. External Links and Services</h2>
+        <p>Subdeck may contain links to Apple's terms of service, privacy policies, email services, or other external websites and services.</p>
+        <p>When you choose to leave Subdeck and access a third-party website, app, or service, that third party's handling of information is not governed by this Privacy Policy.</p>
+        <p>We recommend reviewing the privacy policies and terms of any third-party services you choose to use.</p>
+        <hr>
+        <h2>17. Changes to This Privacy Policy</h2>
+        <p>This Privacy Policy may be updated as Subdeck's features, data processing practices, services used, or applicable legal requirements change.</p>
+        <p>When this Privacy Policy is updated, the “Last Updated” date at the top of this page will be revised accordingly.</p>
+        <p>If a change materially affects your privacy rights or the way your data is processed, we may provide additional notice through reasonable means where appropriate.</p>
+        <p>We encourage you to review this Privacy Policy periodically for the latest information.</p>
+        <hr>
+        <h2>18. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, Subdeck's data practices, or privacy protection, you may contact us at:</p>
+        <p>Developer: QiHu Wang</p>
+        <p>Email: <a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+        <p>We will address privacy-related inquiries and requests concerning Subdeck within a reasonable scope.</p>
+      </article>
+    </main>
+
+    <footer>
+      © Subdeck
+    </footer>
+  </div>
+</body>
+</html>
