@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Subdeck Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f5;
+      --text: #1c1c1a;
+      --muted: #6b6b66;
+      --line: #e4e4df;
+      --max: 40rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111110;
+        --text: #ecece8;
+        --muted: #9a9a94;
+        --line: #2a2a27;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 17px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      line-height: 1.7;
+    }
+
+    .lang-input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    nav {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav label {
+      cursor: pointer;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    nav label:hover {
+      color: var(--text);
+    }
+
+    nav label:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    nav .sep {
+      margin: 0 0.4em;
+      color: var(--line);
+    }
+
+    #lang-zh:checked ~ .page [for="lang-zh"],
+    #lang-en:checked ~ .page [for="lang-en"] {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    #lang-zh:checked ~ .page .policy-en,
+    #lang-en:checked ~ .page .policy-zh {
+      display: none;
+    }
+
+    main {
+      padding-top: 2rem;
+    }
+
+    article :first-child {
+      margin-top: 0;
+    }
+
+    h1, h2, h3, h4 {
+      line-height: 1.35;
+      font-weight: 650;
+    }
+
+    h1 {
+      font-size: 1.65rem;
+      margin: 0 0 1.25rem;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      margin: 2rem 0 0.7rem;
+    }
+
+    h3 {
+      font-size: 1.02rem;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p, ul, ol {
+      margin: 0 0 1rem;
+    }
+
+    ul, ol {
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    a {
+      color: var(--text);
+    }
+
+    .updated {
+      color: var(--muted);
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 2rem 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 640px) {
+      html {
+        font-size: 18px;
+      }
+
+      .page {
+        padding: 2.5rem 1.5rem 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <input class="lang-input" type="radio" name="lang" id="lang-zh" checked>
+  <input class="lang-input" type="radio" name="lang" id="lang-en">
+
+  <div class="page">
+    <header>
+      <p class="brand">Subdeck</p>
+      <nav aria-label="Language">
+        <label for="lang-zh">中文</label><span class="sep">|</span><label for="lang-en">English</label>
+      </nav>
+    </header>
+
+    <main>
+      <article class="policy-zh" lang="zh-CN">
+        <h1>Subdeck 支持</h1>
+        <p class="updated">最后更新日期：2026 年 8 月 17 日</p>
+        <p>本页面用于说明 Subdeck 的支持方式、购买与订阅、iCloud 同步、通知提醒以及相关条款。</p>
+        <hr>
+        <h2>联系我们</h2>
+        <p>如果您在使用 Subdeck 时需要帮助，可以通过以下方式联系我们：</p>
+        <p>开发者：QiHu Wang</p>
+        <p>联系邮箱：<a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+        <hr>
+        <h2>恢复购买</h2>
+        <p>如果您已经购买过 Subdeck Pro，可以在 App 内使用“恢复购买”恢复相应 Pro 权益。</p>
+        <p>请确保当前设备已登录用于购买的同一 Apple ID。</p>
+        <hr>
+        <h2>年度订阅</h2>
+        <p>年度 Pro 通过 Apple App Store 提供，属于自动续期订阅。</p>
+        <p>订阅会按年自动续期，除非您在当前计费周期结束前取消。</p>
+        <p>您可以在 Apple ID 的订阅设置中管理或取消年度订阅。</p>
+        <hr>
+        <h2>终身购买</h2>
+        <p>终身 Pro 为一次性购买，不属于自动续期订阅。</p>
+        <p>完成购买后，您可以持续使用相应的 Pro 权益，无需按年续费。</p>
+        <hr>
+        <h2>iCloud 同步</h2>
+        <p>iCloud 同步用于在您使用同一 Apple ID 的设备之间同步相关数据。</p>
+        <p>该功能依赖您的 Apple ID、iCloud 状态以及网络环境。如果 iCloud 未登录、同步未开启，或网络不可用，同步可能无法完成。</p>
+        <hr>
+        <h2>通知提醒</h2>
+        <p>Subdeck 的提醒由设备上的本地通知提供，用于订阅相关提醒。</p>
+        <p>您可以随时在 iOS 设置中管理 Subdeck 的通知权限。</p>
+        <hr>
+        <h2>退款</h2>
+        <p>App Store 购买和退款由 Apple 处理。</p>
+        <p>Subdeck 不直接处理付款，也无法代替 Apple 完成退款。如需申请退款，请通过 Apple 提供的退款流程操作。</p>
+        <hr>
+        <h2>隐私政策</h2>
+        <p>关于 Subdeck 如何处理相关数据，请查看：</p>
+        <p><a href="https://qihu87.github.io/subdeck-privacy/">https://qihu87.github.io/subdeck-privacy/</a></p>
+        <hr>
+        <h2>使用条款</h2>
+        <p>本应用的标准最终用户许可协议（EULA）请参见 Apple 标准许可协议：</p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+      </article>
+
+      <article class="policy-en" lang="en">
+        <h1>Subdeck Support</h1>
+        <p class="updated">Last Updated: August 17, 2026</p>
+        <p>This page explains how to get support for Subdeck, as well as information about purchases, subscriptions, iCloud Sync, notifications, and related terms.</p>
+        <hr>
+        <h2>Contact</h2>
+        <p>If you need help using Subdeck, you can contact us at:</p>
+        <p>Developer: QiHu Wang</p>
+        <p>Email: <a href="mailto:qihu.studio@gmail.com">qihu.studio@gmail.com</a></p>
+        <hr>
+        <h2>Restore Purchases</h2>
+        <p>If you previously purchased Subdeck Pro, you can use Restore Purchases in the app to restore your Pro access.</p>
+        <p>Please make sure the device is signed in with the same Apple ID used for the original purchase.</p>
+        <hr>
+        <h2>Annual Subscription</h2>
+        <p>Annual Pro is offered through the Apple App Store as an auto-renewable subscription.</p>
+        <p>The subscription renews automatically each year unless you cancel before the current billing period ends.</p>
+        <p>You can manage or cancel the annual subscription in your Apple ID subscription settings.</p>
+        <hr>
+        <h2>Lifetime Purchase</h2>
+        <p>Lifetime Pro is a one-time purchase and is not an auto-renewable subscription.</p>
+        <p>After purchase, you can continue using the relevant Pro features without yearly renewal.</p>
+        <hr>
+        <h2>iCloud Sync</h2>
+        <p>iCloud Sync is used to synchronize relevant data across devices signed in with the same Apple ID.</p>
+        <p>This feature depends on your Apple ID, iCloud status, and network conditions. Sync may not complete if iCloud is not signed in, sync is disabled, or the network is unavailable.</p>
+        <hr>
+        <h2>Notifications</h2>
+        <p>Reminders in Subdeck are provided by local notifications on your device for subscription-related alerts.</p>
+        <p>You can manage Subdeck notification permissions at any time in iOS Settings.</p>
+        <hr>
+        <h2>Refunds</h2>
+        <p>App Store purchases and refunds are handled by Apple.</p>
+        <p>Subdeck does not process payments directly and cannot issue refunds on Apple’s behalf. To request a refund, please use the refund process provided by Apple.</p>
+        <hr>
+        <h2>Privacy Policy</h2>
+        <p>For information about how Subdeck handles related data, please see:</p>
+        <p><a href="https://qihu87.github.io/subdeck-privacy/">https://qihu87.github.io/subdeck-privacy/</a></p>
+        <hr>
+        <h2>Terms of Use</h2>
+        <p>The standard End User License Agreement (EULA) for this app is Apple’s Licensed Application End User License Agreement:</p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+      </article>
+    </main>
+
+    <footer>
+      © Subdeck
+    </footer>
+  </div>
+</body>
+</html>
